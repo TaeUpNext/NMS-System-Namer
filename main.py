@@ -7,7 +7,7 @@ gib = Gibberish()
 
 program = True
 while program:
-    numWords = randint(2,2)
+    numWords = randint(1,3)
     if numWords == 1: #If only 1 word will be generated
         gibVowel = randint(1,3)
         if gibVowel == 1:
@@ -21,8 +21,8 @@ while program:
     
     #creates 2 words       
     elif numWords == 2:  #creates 2 words
-        gibVowel1 = randint(2,2)
-        gibVowel2 = randint(2,2)
+        gibVowel1 = randint(1,3)
+        gibVowel2 = randint(1,3)
         if gibVowel1 == 1 and gibVowel2 == 1: #both words do not start or end in a vowel
             words = gib.generate_words(2)
             print("\n", *words)
